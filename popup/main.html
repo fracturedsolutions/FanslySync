@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FanslySync</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="welcomePage">
+            <img
+                id="logo"
+                src="https://fansly.com/assets/images/fansly_dark_v3.webp"
+                alt="Fansly Logo"
+            />
+            <h1>Welcome to FanslySync!</h1>
+            <p id="greyText">
+                Click the button below to sync your Fansly subscribers and
+                followers to the Discord bot. This will allow you to use the
+                <a href="https://fanslycreator.bot/docs/sync">sync</a> command.
+            </p>
+
+            <!-- Create Input For fansly Auth Token-->
+            <label for="authToken" id="authTokenLabel"
+                >Fansly Auth Token:</label
+            >
+            <input
+                id="authToken"
+                type="password"
+                placeholder="Enter your Fansly Auth Token"
+                required
+            />
+
+            <!-- Description and Disclaimer -->
+            <div class="warning-box">
+                <strong>Notice:</strong> The token is only stored locally and
+                will never be shared. This extension is open source and can be
+                found on <a href="#" target="_blank">GitHub</a>. Please contact
+                us if you have any questions or concerns.
+            </div>
+
+            <br />
+
+            <!-- Create Input For Discord Bot Token-->
+            <button id="syncButton">Sync</button>
+        </div>
+    </body>
+</html>

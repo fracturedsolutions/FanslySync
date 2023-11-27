@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* Light text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#syncPage {
+    text-align: center;
+    background-color: #333; /* Darker background color for sections */
+    padding: 40px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 80%; /* Adjusted width */
+    max-width: 600px; /* Maximum width */
+}
+
+h1 {
+    color: #fff; /* Light text color */
+    margin-bottom: 20px; /* Added margin-bottom */
+}
+
+#greyText {
+    color: #ccc; /* Lighter text color */
+    margin-bottom: 20px; /* Added margin-bottom */
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Added margin-bottom */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#progressBar {
+    background-color: #555; /* Darker background color for progress bar */
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative; /* Added position relative */
+}
+
+#progressBarFill {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+#progressBarText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #fff;
+    font-weight: bold;
+}
+
+#actionText {
+    color: #4caf50; /* Green color for action text */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#warningText {
+    color: #ff5555; /* Red color for warning text */
+    margin-top: 20px;
+}
+
+#exitButton {
+    background-color: #555; /* Darker background color for exit button */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#exitButton:hover {
+    background-color: #777; /* Darker background color for exit button on hover */
+}

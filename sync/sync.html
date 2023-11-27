@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FanslySync</title>
+        <link rel="stylesheet" href="sync.css" />
+        <script src="sync.js"></script>
+    </head>
+    <body>
+        <div id="syncPage">
+            <div class="loader" id="loader"></div>
+            <div style="display: none; text-align: center" id="errorIcon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    width="48"
+                    height="48"
+                    style="color: red"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
+                    />
+                </svg>
+            </div>
+
+            <div style="display: none; text-align: center" id="successIcon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    width="48"
+                    height="48"
+                    style="color: green"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                </svg>
+            </div>
+            <h1 id="title">Syncing...</h1>
+            <p id="greyText">
+                This may take a while depending on how many subscribers and
+                followers you have.
+            </p>
+            <div id="progressBar">
+                <div id="progressBarFill">
+                    <div id="progressBarText">0%</div>
+                </div>
+            </div>
+            <p id="actionText">Fetching initial data, please wait.</p>
+            <p id="warningText">Do not close the window while syncing!</p>
+            <div
+                style="
+                    text-align: center;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                "
+                id="exitButtonDiv"
+            >
+                <button id="exitButton">Exit</button>
+            </div>
+        </div>
+    </body>
+</html>

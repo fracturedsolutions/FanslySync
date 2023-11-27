@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "FanslySync",
+    "description": "Allows you to sync your Fansly data with discord, in paring with the FanslyCreatorBot",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup/main.html",
+        "default_icons": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "host_permissions": [
+        "https://fansly.com/*",
+        "https://apiv3.fansly.com/*",
+        "https://paste.hep.gg/*"
+    ],
+    "permissions": ["storage", "clipboardWrite"]
+}
